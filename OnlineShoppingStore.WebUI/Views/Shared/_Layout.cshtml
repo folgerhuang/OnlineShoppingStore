@@ -3,9 +3,22 @@
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="~/Content/bootstrap.min.css" rel="stylesheet" />
+    <link href="~/Content/bootstrap-theme.min.css" rel="stylesheet" />
     <title>@ViewBag.Title - Online Shopping Store</title>   
 </head>
 <body>
-    @RenderBody()
+    <div class="navbar navbar-inverse" role="navigation">
+        <a class="navbar-brand" href="#">Online Shopping Store</a>
+    </div>
+    <div class="row panel">
+        <div id="Categoris" class="col-lg-3">
+            Categories
+        </div>
+        <div class="col-lg-7">
+            @RenderBody()
+        </div>
+    </div>
+  
 </body>
 </html>
